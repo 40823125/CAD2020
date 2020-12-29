@@ -39,7 +39,7 @@
 <p><span>(41-50)<a href="https://40823104.github.io/cad2020/content/W1.html">40823104的圖檔</a></span></p>
 <p><strong>onshape</strong></p>
 <p>(01-25)<a href="https://40823122.github.io/cad2020/content/%E5%80%8B%E4%BA%BA.html">40823122的圖檔</a></p>
-<p>(26-50)<span> </span><a href="https://drive.google.com/drive/my-drive">40823136的圖檔</a></p>
+<p>(26-50)<span> </span><a href="https://drive.google.com/drive/my-drive">40823136的圖檔</a></p>
 <h1>W2</h1>
 <h4>ssh建立:</h4>
 <p>建立公鑰(public key)</p>
@@ -56,6 +56,20 @@
 <p><img alt="" height="188" src="/images/螢幕擷取畫面 2020-09-27 201954.png" width="350"/></p>
 <p>設定putty</p>
 <p><img alt="" height="246" src="/images/螢幕擷取畫面 2020-09-27 203300.png" width="350"/></p>
+<p>加入到.ssh中取名為comfig</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">ProxyCommand y:/putty/plink.exe github.com %h %p
+ 
+Host github.com
+    User git
+    Port 22
+    Hostname github.com
+ 
+    TCPKeepAlive yes
+    IdentitiesOnly yes</pre>
+<p>將cad2020中.git目錄下的config改為</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">#url = https://github.com/40823125/cad2020.git
+    url = git@github.com:40823125/cad2020.git</pre>
+<p></p><h1>W4</h1>
 <h1>W7</h1>
 <p><strong>檔名需用.c為結尾</strong></p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt;
@@ -164,7 +178,7 @@ double f(double x, double y[], int i){
 <p><img alt="" height="325" src="/images/2.png" width="250"/></p>
 <p><strong>上述程式:</strong></p>
 <p>質量為 1kg 物理, 以 k=1 彈簧與 b=0.5 阻尼器連接在固定牆壁, 起始拉開 1m, 速度為０ 時放開, 求放開質量後的運動模擬.</p>
-<p><mjx-container class="MathJax CtxtMenu_Attached_0" ctxtmenu_counter="0" jax="CHTML" role="presentation" tabindex="0"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml display="inline" role="presentation" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></math></mjx-assistive-mml></mjx-container><span><span> </span>表示質量拉開水平方向設為正向 x, 且為時間 t 的函式</span></p>
+<p><mjx-container class="MathJax CtxtMenu_Attached_0" ctxtmenu_counter="0" jax="CHTML" role="presentation" tabindex="0"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml display="inline" role="presentation" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></math></mjx-assistive-mml></mjx-container><span><span> </span>表示質量拉開水平方向設為正向 x, 且為時間 t 的函式</span></p>
 <p>起始條件:<mjx-container class="MathJax CtxtMenu_Attached_0" ctxtmenu_counter="2" jax="CHTML" role="presentation" tabindex="0"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml display="inline" role="presentation" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo>=-2</mo><mn>.0 ，</mn></math></mjx-assistive-mml></mjx-container><mjx-container class="MathJax CtxtMenu_Attached_0" ctxtmenu_counter="3" jax="CHTML" role="presentation" tabindex="0"><mjx-assistive-mml display="inline" role="presentation" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mover><mi>x</mi><mo>˙</mo></mover></mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo><mo>=1</mo></math></mjx-assistive-mml></mjx-container></p>
 <p>以下利用程式定義解題:</p>
 <p><mjx-container class="MathJax CtxtMenu_Attached_0" ctxtmenu_counter="4" jax="CHTML" role="presentation" tabindex="0"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D466 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c5B"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c5D"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml display="inline" role="presentation" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi><mo>=</mo><mi>y</mi><mo stretchy="false">[</mo><mn>0</mn><mo stretchy="false">]</mo></math></mjx-assistive-mml></mjx-container></p>
@@ -200,13 +214,15 @@ double f(double x, double y[], int i){
 <p><a href="https://drive.google.com/file/d/1VsZoy0F99G0tWm4viq1ehZRVbOwIhZCt/view?usp=sharing">摩天輪-版本2</a></p>
 <p><strong>目前問題:</strong></p>
 <p>摩天輪座艙會旋轉</p>
-<p><span> <iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/FWTWB5z9_YE" width="560"></iframe></span></p>
+<p><span> <iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/FWTWB5z9_YE" width="560"></iframe></span></p>
 <p><span><strong>問題修改:</strong></span></p>
 <p><span><strong><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/NaBG_rHUnCw" width="560"></iframe></strong></span></p>
-<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ukwNpCEVr7U" width="560"></iframe>修改後，座艙無法水平轉動，我的想是座艙重心太前面，導致座艙會前傾轉動。</span></p><h1>W14</h1>
+<p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/ukwNpCEVr7U" width="560"></iframe>修改後，座艙無法水平轉動，我的想是座艙重心太前面，導致座艙會前傾轉動。</span></p>
+<h1>W14</h1>
 <p><strong>團隊作品:</strong></p>
 <p><a href="https://drive.google.com/file/d/1Dqgco8pbMwRwy1iMPS7pa1CFjREwNphc/view?usp=sharing">摩天輪-版本3</a></p>
 <p><strong>問題修改:</strong></p>
 <p>增加座位後面的重量，使球掉落能讓座艙平衡</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/pNLXKu2BvCE" width="560"></iframe></p>
-<p><strong></strong></p><h1>w15</h1>
+<p><strong></strong></p>
+<h1>W15</h1>
